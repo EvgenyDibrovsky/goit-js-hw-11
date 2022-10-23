@@ -4,11 +4,10 @@ export function imageCreate(images) {
   return images
     .map(
       image =>
-        `<div class="gallery--card">
-            <a href="${image.largeImageURL}">
+        `<a class="gallery--card" href="${image.largeImageURL}">
               <img src="${image.webformatURL}" alt="${image.tags}" loading="lazy"
               class="gallery--image" />
-            </a>
+            
             <div class="galery--info">
                 <p class="galery--item">${image.likes}
                 <b>${icons.likes}</b>
@@ -23,7 +22,7 @@ export function imageCreate(images) {
                 <b>${icons.downloads}</b>
                 </p>
             </div>
-        </div>`
+            </a>`
     )
     .join('');
 }
