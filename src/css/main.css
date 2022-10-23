@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(235, 248, 255);
-  background: linear-gradient(309deg, rgb(235, 248, 255) 0%, rgba(254, 255, 134, 0.5270483193) 35%, rgba(130, 213, 255, 0.543855042) 100%);
+  background: linear-gradient(309deg, rgb(235, 248, 255) 0%, rgba(254, 255, 134, 0.5) 35%, rgba(130, 213, 255, 0.5) 100%);
 }
 
 .header {
