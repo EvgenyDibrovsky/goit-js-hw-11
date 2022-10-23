@@ -9,16 +9,6 @@ const gallery = document.querySelector('.gallery');
 const btnLoadMore = document.querySelector('.load-more');
 let gallerySimpleLightbox = new SimpleLightbox('.gallery a');
 
-// const { height: cardHeight } = document
-//   .querySelector('.gallery')
-//   .firstElementChild.getBoundingClientRect();
-
-// window.scrollBy({
-//   top: cardHeight * 2,
-
-//   behavior: 'smooth',
-// });
-
 btnLoadMore.style.display = 'none';
 
 let pageNumber = 1;
@@ -75,8 +65,8 @@ function renderImageList(images) {
 
         <div class="info">
            <p class="info-item">
-    <b>Likes</b> <span class="info-item-api"> ${image.likes} </span>
-</p>
+                <b>Likes</b> <span class="info-item-api"> ${image.likes} </span>
+            </p>
             <p class="info-item">
                 <b>Views</b> <span class="info-item-api">${image.views}</span>  
             </p>
